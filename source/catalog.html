@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header_logo-image" src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__item site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+
+          <div class="main-nav__item search-form">
+            <a class="icon search-form__icon" href="#">
+              <img class="search-form_image" src="img/icon-search.svg" width="18" height="18">
+              Поиск по сайту
+            </a>
+          </div>
+
+          <div class="main-nav__item cart">
+            <a class="icon cart__icon" href="#">
+              <img class="cart_image" src="img/icon-cart.svg" width="20" height="19">
+              Корзина: пока пуста
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-inner">
+      <h1 class="page-inner__heading">Каталог товаров</h1>
+
+      <section class="catalog">
+
+        <h2 class="visually-hidden">Товары</h2>
+
+        <ul class="catalog__list">
+          <li class="catalog-item">
+            <div class="catalog-item__images">
+              <a href="#">
+                <img src="img/item-bunny.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </a>
+            </div>
+
+            <h3 class="catalog-item__title">
+              <a class="catalog-item__link" href="#">
+                Зайчик-попрыгайчик
+              </a>
+            </h3>
+
+            <p class="catalog-item__description">
+              Рост 30 см, вес 200 г
+            </p>
+
+            <p class="catalog-item__price">
+              <span>1 200 руб.</span>
+              <a class="addtocart" href="#">
+                <img class="cart-image" src="img/icon-cart.svg" width="20" height="19">
+              </a>
+            </p>
+          </li>
+
+          <li class="catalog-item">
+            <div class="catalog-item__images">
+              <a href="#">
+                <img src="img/item-laundry-basket.png" alt="Корзинка для белья" width="260" height="195">
+              </a>
+            </div>
+
+            <h3 class="catalog-item__title">
+              <a class="catalog-item__link" href="#">
+                Корзинка для белья
+              </a>
+            </h3>
+
+            <p class="catalog-item__description">
+              Диаметр 15 см, высота 10 см
+            </p>
+
+            <p class="catalog-item__price">
+              <span>690 руб.</span>
+              <a class="addtocart" href="#">
+                <img class="cart-image" src="img/icon-cart.svg" width="20" height="19">
+              </a>
+            </p>
+          </li>
+
+          <li class="catalog-item">
+            <div class="catalog-item__images">
+              <a href="#">
+                <img src="img/item-toys-basket.png" alt="Большая корзинка для игрушек" width="260" height="195">
+              </a>
+            </div>
+
+            <h3 class="catalog-item__title">
+              <a class="catalog-item__link" href="#">
+                Большая корзинка для игрушек
+              </a>
+            </h3>
+
+            <p class="catalog-item__description">
+              Диаметр 30 см, высота 30 см
+            </p>
+
+            <p class="catalog-item__price">
+              <span>1 500 руб.</span>
+              <a class="addtocart" href="#">
+                <img class="cart-image" src="img/icon-cart.svg" width="20" height="19">
+              </a>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="social page-footer__social">
+        <li>
+          <a class="social__link social__link--instagram" href="#" aria-label="Социальная есть Instagram">
+            <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
+            <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
+          </a>
+        </li>
+        <li>
+          <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
+            <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
+        </a>
+      </p>
+    </footer>
+
+    <section class="modal modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__text">
+        Выберите размер:
+      </p>
+      <form class="form select-size" action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li>
+            <label class="select-size__label">S</label>
+            <input class="visually-hidden" type="text" name="size"/>
+          </li>
+          <li>
+            <label class="select-size__label">M</label>
+            <input class="visually-hidden" type="text" name="size"/>
+          </li>
+          <li>
+            <label class="select-size__label">L</label>
+            <input class="visually-hidden" type="text" name="size"/>
+          </li>
+        </ul>
+        <input class="button select-size__button" type="submit" value="Добавить">
+      </form>
+    </section>
+  </body>
+</html>
