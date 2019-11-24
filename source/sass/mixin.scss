@@ -1,0 +1,27 @@
+@mixin set-color($color: $color-base) {
+  color: $color;
+  @if $color == $white {
+    background-color: $seafoam-blue;
+    border: none;
+  } @else {
+    background-color: $white;
+    border: 2px solid $color-base;
+  }
+}
+
+@mixin h1() {
+  margin: 0;
+
+  font-size: $largFontSize;
+  line-height: $largLineHeght;
+  text-align: center;
+  color: $black;
+}
+
+@mixin h2() {
+  margin: 0;
+
+  font-size: $largFontSize - 2;
+  line-height: $largLineHeght;
+  color: $black;
+}

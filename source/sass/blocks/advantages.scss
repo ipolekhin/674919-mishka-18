@@ -1,0 +1,57 @@
+.advantages {
+  padding: 34px 30px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+
+  .advantages__title {
+    @include h2();
+  }
+
+  .advantages__item {
+    padding-top: 40px;
+
+    font-size: $baseFontSize + 2;
+    font-weight: $boldFontWeight;
+    line-height: $baseLineHeght - 4;
+    color: $black;
+
+    &--ecological {
+      background-image: url("../img/icon-ecological.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--scandy-style {
+      background-image: url("../img/icon-scandy-style.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--growth-likes {
+      background-image: url("../img/icon-growth-likes.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--with-love {
+      background-image: url("../img/icon-with-love.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--national {
+      background-image: url("../img/icon-national.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    &--gift-wrap {
+      background-image: url("../img/icon-gift-wrap.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}

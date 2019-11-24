@@ -1,0 +1,7 @@
+.button {
+  font-size: $baseFontSize + 2;
+  font-weight: $boldFontWeight;
+  line-height: $baseLineHeght - 4;
+  text-transform: uppercase;
+  @include set-color();
+}
