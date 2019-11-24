@@ -1,0 +1,10 @@
+.page-inner {
+  .page-inner__heading {
+    margin: 0;
+    padding: 76px 30px;
+
+    @include h1();
+
+    background-color: $white-two;
+  }
+}
