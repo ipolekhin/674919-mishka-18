@@ -1,4 +1,4 @@
-@import "normalize.scss";
+
 @import "fonts.scss";
 @import "variables.scss";
 @import "global.scss";
@@ -17,9 +17,11 @@
 @import "blocks/product-week.scss";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
+//Модальные окна
+@import "blocks/modal.scss";
+@import "blocks/select-size.scss";
 
 //Стили подвала
 @import "blocks/page-footer.scss";
 
-//Модальные окна
-@import "blocks/modal.scss";
+

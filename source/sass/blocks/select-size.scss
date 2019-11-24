@@ -1,3 +1,11 @@
 .select-size {
-  margin: 0;
+  font-size: $baseFontSize + 2;
+  font-weight: $boldFontWeight;
+  line-height: $miniLineHeght;
+
+  .select-size__button {
+    line-height: inherit;
+
+    @include set-color($white, $seafoam-blue, none);
+  }
 }
