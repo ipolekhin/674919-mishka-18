@@ -5,8 +5,8 @@
     background-color: $seafoam-blue;
     border: none;
   }
-  @else
-  {
+
+  @else {
     background-color: $white;
     border: 2px solid $color-base;
   }
