@@ -1,9 +1,11 @@
 @mixin set-color($color: $color-base) {
   color: $color;
+
   @if $color == $white {
     background-color: $seafoam-blue;
     border: none;
-  } @else {
+  }
+  @else {
     background-color: $white;
     border: 2px solid $color-base;
   }

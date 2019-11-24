@@ -1,5 +1,6 @@
 .modal-cart {
   padding: 36px 30px 46px;
+
   .modal-cart__title {
     font-size: $largFontSize - 2;
     line-height: $largLineHeght;
@@ -15,8 +16,10 @@
   font-size: $baseFontSize + 2;
   font-weight: $boldFontWeight;
   line-height: $miniLineHeght;
+
   .select-size__button {
     line-height: inherit;
+
     @include set-color($white);
   }
 }
