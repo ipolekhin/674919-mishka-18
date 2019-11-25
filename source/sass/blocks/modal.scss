@@ -1,13 +1,13 @@
 .modal-cart {
   padding: 36px 30px 46px;
+}
 
-  .modal-cart__title {
-    font-size: $largFontSize - 2;
-    line-height: $largLineHeght;
-    color: $black;
-  }
+.modal-cart__title {
+  font-size: $largFontSize - 2;
+  line-height: $largLineHeght;
+  color: $black;
+}
 
-  .modal-cart__text {
-    line-height: $largLineHeght;
-  }
+.modal-cart__text {
+  line-height: $largLineHeght;
 }

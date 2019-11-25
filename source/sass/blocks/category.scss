@@ -5,31 +5,31 @@ $bgcolor-greeny-blue: #56c3b2;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+}
 
-  .category__header {
-    padding: 76px 39px 120px;
+.category__header {
+  padding: 76px 39px 120px;
+}
+
+.category__slogan {
+  font-size: $largFontSize;
+  line-height: $largLineHeght;
+  color: $very-dark-brown;
+}
+
+.category__link {
+  display: block;
+  padding: 30px 180px 30px 29px;
+
+  font-size: $baseFontSize + 4;
+  font-weight: $boldFontWeight;
+  color: $white;
+
+  &--interior-object {
+    background: $bgcolor-seafoam-blue url("../img/icon-interior.svg") no-repeat 85% center;
   }
 
-  .category__slogan {
-    font-size: $largFontSize;
-    line-height: $largLineHeght;
-    color: $very-dark-brown;
-  }
-
-  .category__link {
-    display: block;
-    padding: 30px 180px 30px 29px;
-
-    font-size: $baseFontSize + 4;
-    font-weight: $boldFontWeight;
-    color: $white;
-
-    &--interior-object {
-      background: $bgcolor-seafoam-blue url("../img/icon-interior.svg") no-repeat 85% center;
-    }
-
-    &--сhildrens-toy {
-      background: $bgcolor-greeny-blue url("../img/icon-toy.svg") no-repeat 85% center;
-    }
+  &--сhildrens-toy {
+    background: $bgcolor-greeny-blue url("../img/icon-toy.svg") no-repeat 85% center;
   }
 }

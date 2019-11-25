@@ -5,4 +5,10 @@
   text-transform: uppercase;
 
   @include set-color();
+
+  &--seafoam-blue {
+    line-height: inherit;
+
+    @include set-color($white, $seafoam-blue, none);
+  }
 }
