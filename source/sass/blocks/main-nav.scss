@@ -1,0 +1,13 @@
+.main-nav {
+  font-size: $baseFontSize + 2;
+  font-weight: $boldFontWeight;
+  line-height: $baseLineHeght;
+
+  a {
+    display: block;
+    padding: 30px;
+    padding-left: 77px;
+
+    color: $black;
+  }
+}

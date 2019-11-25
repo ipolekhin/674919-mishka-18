@@ -1,0 +1,41 @@
+.catalog {
+  margin: 30px;
+}
+
+.catalog-item {
+  margin-bottom: 30px;
+
+  a {
+    display: flex;
+  }
+}
+
+.catalog-item__description {
+  padding: 30px 28px;
+
+  border: 1px solid $white-four;
+}
+
+.catalog-item__title {
+  margin: 0;
+}
+
+.catalog-item__link {
+  font-size: $baseFontSize + 2;
+  font-weight: $boldFontWeight;
+  color: $black;
+}
+
+.catalog-item__property {
+  margin: 0;
+
+  font-size: $baseFontSize - 2;
+  line-height: $largLineHeght;
+}
+
+.catalog-item__price {
+  margin: 0;
+
+  font-weight: $boldFontWeight;
+  color: $black;
+}

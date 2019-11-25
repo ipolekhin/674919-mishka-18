@@ -1,23 +1,25 @@
-html {
-  box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+@import "fonts.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "mixin.scss";
+@import "blocks/button.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-}
+//Стили шапки
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
 
-img {
-  max-width: 100%;
-  height: auto;
-}
+//Стили главной страницы и внутренних страниц
+@import "blocks/page-main.scss";
+@import "blocks/page-inner.scss";
+//Стили в теле страниц
+@import "blocks/category.scss";
+@import "blocks/product-week.scss";
+@import "blocks/advantages.scss";
+@import "blocks/catalog.scss";
+//Модальные окна
+@import "blocks/modal.scss";
+@import "blocks/select-size.scss";
 
-a {
-  text-decoration: none;
-}
+//Стили подвала
+@import "blocks/page-footer.scss";
