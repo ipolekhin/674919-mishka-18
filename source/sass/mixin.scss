@@ -20,3 +20,17 @@
   line-height: $largLineHeght;
   color: $black;
 }
+
+@mixin sets-colors($color: $color-base) {
+  color: $color;
+
+  @if $color == $white {
+    background-color: $seafoam-blue;
+    border: none;
+  }
+
+  @else {
+    background-color: $white;
+    border: 2px solid $color-base;
+  }
+}
