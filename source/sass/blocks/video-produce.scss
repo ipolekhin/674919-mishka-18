@@ -20,7 +20,7 @@
     width: 32px;
     height: 28px;
 
-    background-image: url(../img/icon-video.svg);
+    background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
@@ -36,11 +36,10 @@
     width: 101px;
     height: 77px;
 
-    background-image: url(../img/icon-play.svg);
+    background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-
 }
 
 .video-produce__description {
