@@ -14,10 +14,7 @@
 .advantages__item {
   padding-top: 40px;
 
-  font-size: $baseFontSize + 2;
-  font-weight: $boldFontWeight;
-  line-height: $baseLineHeght - 4;
-  color: $black;
+  @include set-typography($baseFontSize + 2, $boldFontWeight, $baseLineHeght - 4, $black);
 
   &--ecological {
     background-image: url("../img/icon-ecological.svg");

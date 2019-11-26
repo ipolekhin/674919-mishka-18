@@ -1,22 +1,33 @@
 
 @import "fonts.scss";
 @import "variables.scss";
-@import "global.scss";
 @import "mixin.scss";
+@import "global.scss";
 @import "blocks/button.scss";
 
 //Стили шапки
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/search-form.scss";
+@import "blocks/cart.scss";
 
 //Стили главной страницы и внутренних страниц
 @import "blocks/page-main.scss";
 @import "blocks/page-inner.scss";
-//Стили в теле страниц
+
+//Стили в теле страниц index.html
 @import "blocks/category.scss";
 @import "blocks/product-week.scss";
 @import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+//Стили в теле страниц catalog.html
 @import "blocks/catalog.scss";
+@import "blocks/video-produce.scss";
+//Стили в теле страниц form.html
+@import "blocks/ordering.scss";
+@import "blocks/form.scss";
+
 //Модальные окна
 @import "blocks/modal.scss";
 @import "blocks/select-size.scss";

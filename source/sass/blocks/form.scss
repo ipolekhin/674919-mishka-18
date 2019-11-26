@@ -1,3 +1,50 @@
 .form {
-  margin: 0;
+  fieldset {
+    padding: 0;
+
+    border: none;
+  }
+
+  legend {
+    padding: 0;
+  }
+}
+
+.form__group {
+  margin: 16px 0;
+}
+
+.form__title {
+  font-size: $baseFontSize + 2;
+  font-weight: $boldFontWeight;
+  line-height: $miniLineHeght;
+  color: $seafoam-blue;
+}
+
+.form__item {
+  @include set-typography($baseFontSize + 2, $boldFontWeight, $miniLineHeght + 2, $black);
+
+  input,
+  textarea {
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-base;
+
+    &::placeholder {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  input[type = "tel"] {
+    font-size: $baseFontSize + 4;
+  }
+}
+
+.form__text {
+  font-size: $baseFontSize - 1;
+  line-height: $miniLineHeght;
+}
+
+.form__submit {
+  line-height: $miniLineHeght;
 }

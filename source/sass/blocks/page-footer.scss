@@ -4,9 +4,6 @@
   background-color: $white-two;
 
   .copyright__text {
-    font-size: $baseFontSize + 4;
-    font-weight: $boldFontWeight;
-    line-height: $baseLineHeght - 6;
-    color: $black;
+    @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
   }
 }

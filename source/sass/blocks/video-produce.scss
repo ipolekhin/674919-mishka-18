@@ -1,3 +1,48 @@
 .video-produce {
-  margin: 0;
+  margin: 30px;
+
+  border: 1px solid #ececec;
+}
+
+.video-produce__title {
+  position: relative;
+
+  padding-left: 91px;
+
+  font-size: $baseFontSize + 2;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+
+    width: 32px;
+    height: 28px;
+
+    background-image: url(../img/icon-video.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.video-produce__video-image {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 101px;
+    height: 77px;
+
+    background-image: url(../img/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+}
+
+.video-produce__description {
+  margin: 34px;
 }

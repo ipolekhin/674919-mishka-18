@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+
   font-size: $baseFontSize + 2;
   font-weight: $boldFontWeight;
   line-height: $baseLineHeght - 4;

@@ -7,10 +7,7 @@
 }
 
 .product-week__subject {
-  font-size: $baseFontSize + 2;
-  font-weight: $boldFontWeight;
-  line-height: $baseLineHeght - 4;
-  color: $seafoam-blue;
+  @include set-typography($baseFontSize + 2, $boldFontWeight, $baseLineHeght - 4, $seafoam-blue);
 }
 
 .property__description,

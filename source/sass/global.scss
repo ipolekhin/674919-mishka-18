@@ -15,10 +15,7 @@ body {
   min-width: 320px;
 
   font-family: "Open Sans", "Arial", sans-serif;
-  font-size: $baseFontSize;
-  font-weight: $baseFontWeight;
-  line-height: $baseLineHeght;
-  color: $color-base;
+  @include set-typography();
 }
 
 img {

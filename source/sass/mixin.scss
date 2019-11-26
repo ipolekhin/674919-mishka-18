@@ -21,16 +21,9 @@
   color: $black;
 }
 
-@mixin sets-colors($color: $color-base) {
+@mixin set-typography($FontSize: $baseFontSize, $FontWeight: $baseFontWeight, $LineHeght: $baseLineHeght, $color: $color-base) {
+  font-size: $FontSize;
+  font-weight: $FontWeight;
+  line-height: $LineHeght;
   color: $color;
-
-  @if $color == $white {
-    background-color: $seafoam-blue;
-    border: none;
-  }
-
-  @else {
-    background-color: $white;
-    border: 2px solid $color-base;
-  }
 }
