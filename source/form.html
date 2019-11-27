@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img class="page-header_logo-image" src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
       </a>
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__item site-list">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
+
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
@@ -23,14 +27,12 @@
 
           <div class="main-nav__item search-form">
             <a class="icon search-form__icon" href="#">
-              <img class="search-form_image" src="img/icon-search.svg" width="18" height="18">
               Поиск по сайту
             </a>
           </div>
 
           <div class="main-nav__item cart">
             <a class="icon cart__icon" href="#">
-              <img class="cart_image" src="img/icon-cart.svg" width="20" height="19">
               Корзина: пока пуста
             </a>
           </div>
@@ -51,6 +53,7 @@
         <form class="form ordering__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
             <legend class="form__title">Тип:</legend>
+
             <ul class="form__list">
               <li class="form__item">
                 <input class="visually-hidden" id="type-interior-object" type="radio" name="type" value="interior-object" checked="">
@@ -58,6 +61,7 @@
                   Аксессуар для интерьера
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="type-сhildrens-toy" type="radio" name="type" value="сhildrens-toy">
                 <label for="type-сhildrens-toy">
@@ -69,6 +73,7 @@
 
           <fieldset class="form__group">
             <legend class="form__title">Цвет:</legend>
+
             <ul class="form__list">
               <li class="form__item">
                 <input class="visually-hidden" id="color-white" type="checkbox" name="color" value="white" checked="">
@@ -76,30 +81,35 @@
                   Белый
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="color-gray" type="checkbox" name="color" value="gray" checked="">
                 <label class="form__checkbox" for="color-gray">
                   Серый
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="color-tiffani" type="checkbox" name="color" value="tiffani">
                 <label class="form__checkbox" for="color-tiffani">
                   «Тиффани»
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="color-black" type="checkbox" name="color" value="black">
                 <label class="form__checkbox" for="color-black">
                   Черный
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="color-pink" type="checkbox" name="color" value="pink">
                 <label class="form__checkbox" for="color-pink">
                   Розовый
                 </label>
               </li>
+
               <li class="form__item">
                 <input class="visually-hidden" id="color-orange" type="checkbox" name="color" value="orange">
                 <label class="form__checkbox" for="color-orange">
@@ -111,15 +121,18 @@
 
           <div class="form__group">
             <div class="form__title">ФИО</div>
+
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__label" for="fname-field">Имя:</label>
                 <input class="form__field" id="fname-field" type="text" name="fname" placeholder="Введите ваше имя*" required>
               </li>
+
               <li class="form__item">
                 <label class="form__label" for="lname-field">Фамилия:</label>
                 <input class="form__field" id="lname-field" type="text" name="lname" placeholder="Укажите фамилию*" required>
               </li>
+
               <li class="form__item">
                 <label class="form__label" for="father_name-field">Отчество:</label>
                 <input class="form__field" id="father_name-field" type="text" name="father_name" placeholder="Отчество, если желаете">
@@ -129,16 +142,18 @@
 
           <div class="form__group">
             <div class="form__title">Тел</div>
+
             <ul class="form__list">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="phone-field">Телефон</label>
-                <input class="form__field form__field--phone" id="phone-field" type="text" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="form__field form__field--phone" id="phone-field" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </li>
             </ul>
           </div>
 
           <div class="form__group">
             <div class="form__title">E-mail</div>
+
             <ul class="form__list">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="email-field">E-mail</label>
@@ -149,6 +164,7 @@
 
           <div class="form__group">
             <div class="form__title">Доп</div>
+
             <ul class="form__list">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="comment-field">Дополнительная информация</label>
@@ -172,17 +188,20 @@
             <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
           </a>
         </li>
+
         <li>
           <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
             <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
           </a>
         </li>
+
         <li>
           <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
             <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
           </a>
         </li>
       </ul>
+
       <p class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">

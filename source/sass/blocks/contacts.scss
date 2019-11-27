@@ -1,3 +1,29 @@
 .contacts {
-  margin: 0;
+  iframe {
+    border: none;
+  }
+}
+
+.contacts__title {
+  margin: 10px 30px;
+
+  font-size: $baseFontSize + 3;
+  line-height: $largLineHeght;
+  color: $black;
+}
+
+.contacts__group {
+  margin: 30px;
+
+  line-height: $largLineHeght;
+}
+
+.contacts__email-link {
+  color: $color-base;
+
+  box-shadow: 0 1px 0 0 rgb(98, 209, 186);
+}
+
+.contacts__write {
+  font-size: $baseFontSize + 3;
 }

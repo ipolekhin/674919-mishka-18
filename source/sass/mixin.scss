@@ -20,3 +20,10 @@
   line-height: $largLineHeght;
   color: $black;
 }
+
+@mixin set-typography($FontSize: $baseFontSize, $FontWeight: $baseFontWeight, $LineHeght: $baseLineHeght, $color: $color-base) {
+  font-size: $FontSize;
+  font-weight: $FontWeight;
+  line-height: $LineHeght;
+  color: $color;
+}
