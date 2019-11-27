@@ -10,13 +10,16 @@
       <a class="page-header__logo">
         <img class="page-header_logo-image" src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
       </a>
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
+
         <div class="main-nav__wrapper">
           <ul class="main-nav__item site-list">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
+
             <li class="site-list__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
@@ -43,6 +46,7 @@
       <section class="category">
         <header class="category__header">
           <h2 class="visually-hidden">Категории разделов</h2>
+
           <b class="category__slogan">Милые штуки ручной работы для дома</b>
         </header>
 
@@ -50,6 +54,7 @@
           <li class="category__item">
             <a class="category__link category__link--interior-object" href="#">Предметы интерьера</a>
           </li>
+
           <li class="category__item">
             <a class="category__link category__link--сhildrens-toy" href="#">Детские игрушки</a>
           </li>
@@ -58,7 +63,9 @@
 
       <section class="product-week">
         <h2 class="product-week__title">Вязаные корзинки</h2>
+
         <span class="product-week__subject">Товар недели</span>
+
         <p class="product-week__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.
         </p>
@@ -68,22 +75,27 @@
             <td class="property__description">
               Цвет:
             </td>
+
             <td class="property__value">
               «Тиффани»/серый
             </td>
           </tr>
+
           <tr>
             <td class="property__description">
               Диаметр:
             </td>
+
             <td class="property__value">
               25 см
             </td>
           </tr>
+
           <tr>
             <td class="property__description">
               Высота:
             </td>
+
             <td class="property__value">
               15 см
             </td>
@@ -108,18 +120,23 @@
           <li class="advantages__item advantages__item--ecological">
             Экологически чистые материалы
           </li>
+
           <li class="advantages__item advantages__item--scandy-style">
             Скандинавский стиль по российской цене
           </li>
+
           <li class="advantages__item advantages__item--growth-likes">
             Увеличивает лайки на фотографиях
           </li>
+
           <li class="advantages__item advantages__item--with-love">
             Связано вручную с любовью и умилением
           </li>
+
           <li class="advantages__item advantages__item--national">
             Поддержка отечественного производителя
           </li>
+
           <li class="advantages__item advantages__item--gift-wrap">
             Поставляется в подарочной упаковке
           </li>
@@ -152,6 +169,7 @@
 
         <div class="contacts__group">
           <div class="contact__label">e-mail:</div>
+
           <div class="contacts__info">
             <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </div>
@@ -159,6 +177,7 @@
 
         <div class="contacts__group">
           <div class="contact__label">адрес:</div>
+
           <div class="contacts__info">
             г. Санкт-Петербург,
             ул. Большая Конюшенная,
@@ -181,19 +200,23 @@
             <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
           </a>
         </li>
+
         <li>
           <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
             <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
           </a>
         </li>
+
         <li>
           <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
             <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
           </a>
         </li>
       </ul>
+
       <p class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
+
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
         </a>
@@ -202,24 +225,29 @@
 
     <section class="modal modal-cart">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
+
       <p class="modal-cart__text">
         Выберите размер:
       </p>
+
       <form class="form select-size" action="https://echo.htmlacademy.ru" method="post">
         <ul>
           <li>
-            <label class="select-size__label">S</label>
-            <input class="visually-hidden" type="text" name="size"/>
+            <label class="select-size__label" for="select-size__s">S</label>
+            <input class="visually-hidden" id="select-size__s" type="text" name="size"/>
           </li>
+
           <li>
-            <label class="select-size__label">M</label>
-            <input class="visually-hidden" type="text" name="size"/>
+            <label class="select-size__label" for="select-size__m">M</label>
+            <input class="visually-hidden" id="select-size__m" type="text" name="size"/>
           </li>
+
           <li>
-            <label class="select-size__label">L</label>
-            <input class="visually-hidden" type="text" name="size"/>
+            <label class="select-size__label" for="select-size__l">L</label>
+            <input class="visually-hidden" id="select-size__l" type="text" name="size"/>
           </li>
         </ul>
+
         <input class="button button--seafoam-blue" type="submit" value="Добавить">
       </form>
     </section>

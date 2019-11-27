@@ -1,0 +1,3 @@
+.copyright__text {
+  @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
+}

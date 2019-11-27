@@ -2,8 +2,4 @@
   padding: 20px 30px;
 
   background-color: $white-two;
-
-  .copyright__text {
-    @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
-  }
 }
