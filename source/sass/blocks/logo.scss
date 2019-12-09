@@ -1,0 +1,33 @@
+.logo {
+  a {
+    display: inline-block;
+  }
+
+  &--top {
+    padding: 20px;
+    height: 79px;
+    text-align: center;
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  }
+
+  &--bottom {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo {
+    &--top {
+      flex-grow: 1;
+      padding-left: 51px;
+      height: 88px;
+
+      text-align: left;
+    }
+
+    &--bottom {
+      margin-right: 78px;
+      display: block;
+    }
+  }
+}

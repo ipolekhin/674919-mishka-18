@@ -1,3 +1,15 @@
+.copyright {
+  img {
+    vertical-align: text-bottom;
+  }
+}
+
 .copyright__text {
   @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-right: 25px;
+  }
 }

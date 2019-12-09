@@ -1,8 +1,20 @@
 .page-inner__heading {
   margin: 0;
-  padding: 76px 30px;
+  padding: 73px 30px 74px;
 
   @include h1();
 
   background-color: $white-two;
+}
+
+@media (min-width: $tablet-width) {
+  .page-inner__heading {
+    padding: 79px 30px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .page-inner__heading {
+    padding: 93px 30px 92px;
+  }
 }

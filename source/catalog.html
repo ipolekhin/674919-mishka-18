@@ -7,15 +7,18 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header_logo-image" src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
-      </a>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <!--  visually-hidden врменно, удалить позже  -->
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
 
         <div class="main-nav__wrapper">
-          <ul class="main-nav__item site-list">
+          <div class="main-nav__item logo logo--top">
+            <a class="page-header__logo" href="index.html">
+              <img src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
+            </a>
+          </div>
+
+          <ul class="main-nav__item site-list site-list--menu">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
@@ -27,7 +30,9 @@
 
           <div class="main-nav__item search-form">
             <a class="icon search-form__icon" href="#">
-              Поиск по сайту
+                <span>
+                  Поиск по сайту
+                </span>
             </a>
           </div>
 
@@ -36,6 +41,21 @@
               Корзина: пока пуста
             </a>
           </div>
+
+          <ul class="main-nav__item site-list site-list--offers">
+            <li class="site-list__item">
+              <a href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Распродажа</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__item site-list site-list--post">
+            <li class="site-list__item">
+              <a href="form.html">Бесплатная доставка по России</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -44,90 +64,92 @@
       <h1 class="page-inner__heading">Каталог товаров</h1>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Товары</h2>
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Товары</h2>
 
-        <ul class="catalog__list">
-          <li class="catalog-item">
-            <div class="catalog-item__images">
-              <a href="#">
-                <img src="img/item-bunny.png" alt="Зайчик-попрыгайчик" width="260" height="195">
-              </a>
-            </div>
-
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">
-                  Зайчик-попрыгайчик
+          <ul class="catalog__list">
+            <li class="catalog-item">
+              <div class="catalog-item__images">
+                <a href="#">
+                  <img src="img/item-bunny.png" alt="Зайчик-попрыгайчик" width="260" height="195">
                 </a>
-              </h3>
+              </div>
 
-              <p class="catalog-item__property">
-                Рост 30 см, вес 200 г
-              </p>
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Зайчик-попрыгайчик
+                  </a>
+                </h3>
 
-              <p class="catalog-item__price">
-                <span>1 200 руб.</span>
-                <a class="addtocart" href="#">
-                  <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
+                <p class="catalog-item__property">
+                  Рост 30 см, вес 200 г
+                </p>
+
+                <p class="catalog-item__price">
+                  <span>1 200 руб.</span>
+                  <a class="addtocart" href="#">
+                    <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <div class="catalog-item__images">
+                <a href="#">
+                  <img src="img/item-laundry-basket.png" alt="Корзинка для белья" width="260" height="195">
                 </a>
-              </p>
-            </div>
-          </li>
+              </div>
 
-          <li class="catalog-item">
-            <div class="catalog-item__images">
-              <a href="#">
-                <img src="img/item-laundry-basket.png" alt="Корзинка для белья" width="260" height="195">
-              </a>
-            </div>
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Корзинка для белья
+                  </a>
+                </h3>
 
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">
-                  Корзинка для белья
+                <p class="catalog-item__property">
+                  Диаметр 15 см, высота 10 см
+                </p>
+
+                <p class="catalog-item__price">
+                  <span>690 руб.</span>
+                  <a class="addtocart" href="#">
+                    <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="catalog-item">
+              <div class="catalog-item__images">
+                <a href="#">
+                  <img src="img/item-toys-basket.png" alt="Большая корзинка для игрушек" width="260" height="195">
                 </a>
-              </h3>
+              </div>
 
-              <p class="catalog-item__property">
-                Диаметр 15 см, высота 10 см
-              </p>
+              <div class="catalog-item__description">
+                <h3 class="catalog-item__title">
+                  <a class="catalog-item__link" href="#">
+                    Большая корзинка для игрушек
+                  </a>
+                </h3>
 
-              <p class="catalog-item__price">
-                <span>690 руб.</span>
-                <a class="addtocart" href="#">
-                  <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
-                </a>
-              </p>
-            </div>
-          </li>
+                <p class="catalog-item__property">
+                  Диаметр 30 см, высота 30 см
+                </p>
 
-          <li class="catalog-item">
-            <div class="catalog-item__images">
-              <a href="#">
-                <img src="img/item-toys-basket.png" alt="Большая корзинка для игрушек" width="260" height="195">
-              </a>
-            </div>
-
-            <div class="catalog-item__description">
-              <h3 class="catalog-item__title">
-                <a class="catalog-item__link" href="#">
-                  Большая корзинка для игрушек
-                </a>
-              </h3>
-
-              <p class="catalog-item__property">
-                Диаметр 30 см, высота 30 см
-              </p>
-
-              <p class="catalog-item__price">
-                <span>1 500 руб.</span>
-                <a class="addtocart" href="#">
-                  <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
-                </a>
-              </p>
-            </div>
-          </li>
-        </ul>
+                <p class="catalog-item__price">
+                  <span>1 500 руб.</span>
+                  <a class="addtocart" href="#">
+                    <img class="cart-image" src="img/icon-cart.svg" alt="Положить в корзину" width="20" height="19">
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="video-produce">
@@ -148,62 +170,72 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="social page-footer__social">
-        <li>
-          <a class="social__link social__link--instagram" href="#" aria-label="Социальная есть Instagram">
-            <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
+      <div class="page-footer__wrapper">
+        <div class="main-nav__item logo logo--bottom">
+          <a href="index.html">
+            <img src="img/logo-footer.svg" alt="Логотип интернет-магазина «Мишка»" width="102" height="34">
           </a>
-        </li>
+        </div>
 
-        <li>
-          <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
-            <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
-          </a>
-        </li>
-
-        <li>
-          <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
-            <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
-          </a>
-        </li>
-      </ul>
-
-      <p class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
-        </a>
-      </p>
-    </footer>
-
-    <section class="modal modal-cart">
-      <h2 class="modal-cart__title">Добавить в корзину</h2>
-
-      <p class="modal-cart__text">
-        Выберите размер:
-      </p>
-
-      <form class="form select-size" action="https://echo.htmlacademy.ru" method="post">
-        <ul>
+        <ul class="social page-footer__social">
           <li>
-            <label class="select-size__label" for="select-size__s">S</label>
-            <input class="visually-hidden" id="select-size__s" type="text" name="size"/>
+            <a class="social__link social__link--instagram" href="#" aria-label="Социальная есть Instagram">
+              <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
+            </a>
           </li>
 
           <li>
-            <label class="select-size__label" for="select-size__m">M</label>
-            <input class="visually-hidden" id="select-size__m" type="text" name="size"/>
+            <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
+              <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
+            </a>
           </li>
 
           <li>
-            <label class="select-size__label" for="select-size__l">L</label>
-            <input class="visually-hidden" id="select-size__l" type="text" name="size"/>
+            <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
+              <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
+            </a>
           </li>
         </ul>
 
-        <input class="button button--seafoam-blue" type="submit" value="Добавить">
-      </form>
+        <p class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <section class="modal modal-cart">
+      <div class="modal-cart__wrapper">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+
+        <p class="modal-cart__text">
+          Выберите размер:
+        </p>
+
+        <form class="form select-size" action="https://echo.htmlacademy.ru" method="post">
+          <ul>
+            <li>
+              <label class="select-size__label" for="select-size__s">S</label>
+              <input class="visually-hidden" id="select-size__s" type="text" name="size"/>
+            </li>
+
+            <li>
+              <label class="select-size__label" for="select-size__m">M</label>
+              <input class="visually-hidden" id="select-size__m" type="text" name="size"/>
+            </li>
+
+            <li>
+              <label class="select-size__label" for="select-size__l">L</label>
+              <input class="visually-hidden" id="select-size__l" type="text" name="size"/>
+            </li>
+          </ul>
+
+          <input class="button button--seafoam-blue" type="submit" value="Добавить">
+        </form>
+      </div>
     </section>
   </body>
 </html>

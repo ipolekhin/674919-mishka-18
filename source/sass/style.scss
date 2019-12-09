@@ -8,6 +8,8 @@
 //Стили шапки
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/logo.scss";
 @import "blocks/search-form.scss";
 @import "blocks/cart.scss";
 
@@ -35,4 +37,5 @@
 
 //Стили подвала
 @import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
