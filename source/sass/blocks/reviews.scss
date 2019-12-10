@@ -1,8 +1,9 @@
 .reviews {
   position: relative;
 
-  margin: 30px 0;
+  margin: 30px auto;
   padding: 0 30px;
+  width: 320px;
 
   &::after {
     content: "";
@@ -47,4 +48,16 @@
 
 .reviews__write {
   font-size: $baseFontSize + 3;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews {
+    width: 1150px;
+  }
 }

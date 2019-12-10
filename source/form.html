@@ -7,15 +7,18 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header_logo-image" src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
-      </a>
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <!--  visually-hidden врменно, удалить позже  -->
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
 
         <div class="main-nav__wrapper">
-          <ul class="main-nav__item site-list">
+          <div class="main-nav__item logo logo--top">
+            <a class="page-header__logo" href="index.html">
+              <img src="img/mishka-logo.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
+            </a>
+          </div>
+
+          <ul class="main-nav__item site-list site-list--menu">
             <li class="site-list__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
@@ -27,7 +30,9 @@
 
           <div class="main-nav__item search-form">
             <a class="icon search-form__icon" href="#">
-              Поиск по сайту
+                <span>
+                  Поиск по сайту
+                </span>
             </a>
           </div>
 
@@ -36,6 +41,21 @@
               Корзина: пока пуста
             </a>
           </div>
+
+          <ul class="main-nav__item site-list site-list--offers">
+            <li class="site-list__item">
+              <a href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Распродажа</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__item site-list site-list--post">
+            <li class="site-list__item">
+              <a href="form.html">Бесплатная доставка по России</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -182,32 +202,40 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="social page-footer__social">
-        <li>
-          <a class="social__link social__link--instagram" href="#" aria-label="Социальная есть Instagram">
-            <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
+      <div class="page-footer__wrapper">
+        <div class="main-nav__item logo logo--bottom">
+          <a href="index.html">
+            <img src="img/logo-footer.svg" alt="Логотип интернет-магазина «Мишка»" width="102" height="34">
           </a>
-        </li>
+        </div>
 
-        <li>
-          <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
-            <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
+        <ul class="social page-footer__social">
+          <li>
+            <a class="social__link social__link--instagram" href="#" aria-label="Социальная есть Instagram">
+              <img src="img/social-icon-insta.svg" alt="Instagram" width="22" height="21">
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link social__link--facebook" href="#" aria-label="Социальная есть Facebook">
+              <img src="img/social-icon-fb.svg" alt="Facebook" width="15" height="28">
+            </a>
+          </li>
+
+          <li>
+            <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
+              <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
+            </a>
+          </li>
+        </ul>
+
+        <p class="page-footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
           </a>
-        </li>
-
-        <li>
-          <a class="social__link social__link--twitter" href="#" aria-label="Социальная есть Twitter">
-            <img src="img/social-icon-twitter.svg" alt="Twitter" width="23" height="20">
-          </a>
-        </li>
-      </ul>
-
-      <p class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/htmlacademy.svg" alt="Разработано" width="27" height="34">
-        </a>
-      </p>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

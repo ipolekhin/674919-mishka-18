@@ -1,4 +1,8 @@
 .property__description,
 .property__value {
+  padding: 9px 0;
+
   line-height: $baseLineHeght - 4;
+
+  box-shadow: 0 1px 0 0 #ececec;
 }

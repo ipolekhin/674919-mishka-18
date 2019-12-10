@@ -1,7 +1,17 @@
+.cart {
+  a {
+    display: block;
+    padding: 26px 0 29px 77px;
+    height: 79px;
+
+    box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+  }
+}
+
 .cart__icon {
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     left: 40px;
@@ -12,5 +22,15 @@
     background-image: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cart {
+    width: 316px;
+
+    a {
+      height: 88px;
+    }
   }
 }

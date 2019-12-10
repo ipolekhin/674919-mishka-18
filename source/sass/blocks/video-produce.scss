@@ -1,5 +1,6 @@
 .video-produce {
-  margin: 30px;
+  margin: 30px auto;
+  width: 260px;
 
   border: 1px solid #ececec;
 }
@@ -44,4 +45,16 @@
 
 .video-produce__description {
   margin: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-produce {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .video-produce {
+    width: 1050px;
+  }
 }

@@ -2,24 +2,34 @@ $bgcolor-seafoam-blue: $seafoam-blue;
 $bgcolor-greeny-blue: #56c3b2;
 
 .category {
+  margin: 0 auto;
+  width: 320px;
+
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
 
 .category__header {
-  padding: 76px 39px 120px;
+  padding: 76px 0 16px;
+  min-height: 283px;
+
+  text-align: center;
 }
 
 .category__slogan {
+  display: inline-block;
+  width: 244px;
+
   font-size: $largFontSize;
   line-height: $largLineHeght;
   color: $very-dark-brown;
+  text-align: center;
 }
 
 .category__link {
   display: block;
-  padding: 30px 180px 30px 29px;
+  padding: 28px 180px 27px 29px;
 
   font-size: $baseFontSize + 4;
   font-weight: $boldFontWeight;
@@ -31,5 +41,49 @@ $bgcolor-greeny-blue: #56c3b2;
 
   &--сhildrens-toy {
     background: $bgcolor-greeny-blue url("../img/icon-toy.svg") no-repeat 85% center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category {
+    width: 668px;
+  }
+
+  .category__header {
+    min-height: 586px;
+  }
+
+  .category__slogan {
+    width: 494px;
+  }
+
+  .category__link {
+    padding: 36px 180px 35px 29px;
+  }
+
+  .category__list {
+    display: flex;
+  }
+
+  .category__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .category {
+    width: 1050px;
+  }
+
+  .category__slogan {
+    width: 604px;
+  }
+
+  .category__link {
+    padding: 36px 336px 35px 29px;
+  }
+
+  .category__item {
+    width: 525px;
   }
 }

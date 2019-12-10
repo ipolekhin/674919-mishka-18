@@ -1,15 +1,33 @@
 .main-nav {
+  margin: 0 auto;
+  width: 320px;
+
   font-size: $baseFontSize + 2;
   font-weight: $boldFontWeight;
   line-height: $baseLineHeght;
 
   a {
-    display: block;
-    padding: 30px;
-    padding-left: 77px;
-
     color: $black;
+  }
+}
 
-    box-shadow: 0 1px 0 0 rgb(236, 236, 236);
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav__wrapper {
+    width: 1150px;
   }
 }

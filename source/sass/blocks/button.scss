@@ -1,9 +1,12 @@
 .button {
   display: inline-block;
+  padding: 14px 8px;
+  width: 100%;
 
   font-size: $baseFontSize + 2;
   font-weight: $boldFontWeight;
   line-height: $baseLineHeght - 4;
+  text-align: center;
   text-transform: uppercase;
 
   @include set-color();

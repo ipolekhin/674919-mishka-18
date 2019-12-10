@@ -1,4 +1,7 @@
 .contacts {
+  margin: 0 auto;
+  width: 320px;
+
   iframe {
     border: none;
   }
@@ -26,4 +29,16 @@
 
 .contacts__write {
   font-size: $baseFontSize + 3;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .contacts {
+    width: 1150px;
+  }
 }
