@@ -1,56 +1,41 @@
-.modal-cart {
-  &__wrapper {
-    margin: 0 auto;
-    padding: 36px 30px 46px;
-    width: 320px;
+.modal-cart__wrapper {
+  margin: 0 auto;
+  padding: 9px 30px 46px;
+  width: 320px;
 
-    text-align: center;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
-  }
-}
-
-.select-size {
-  ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    margin-bottom: 31px;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  label {
-    display: block;
-    padding: 16px 8px;
-    width: 82px;
-
-    border: solid 2px #444444;
-
-    cursor: pointer;
-  }
-
-  .button {
-    cursor: pointer;
-  }
+  text-align: center;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
 }
 
 .modal-cart__title {
+  margin-bottom: 12px;
+
   font-size: $largFontSize - 2;
   line-height: $largLineHeght;
+  text-transform: uppercase;
   color: $black;
 }
 
 .modal-cart__text {
+  margin-top: 12px;
+  margin-bottom: 22px;
+
   line-height: $largLineHeght;
 }
 
 @media (min-width: $tablet-width) {
-  .modal-cart {
-    &__wrapper {
-      padding: 51px 108px 46px;
-      width: 566px;
-    }
+  .modal-cart__wrapper {
+    padding: 8px 100px 47px;
+    width: 566px;
+  }
+
+  .modal-cart__title {
+    font-size: $largFontSize + 3;
+    line-height: $h2desctopLineHeight;
+  }
+
+  .modal-cart__text {
+    font-size: $baseFontSize + 2;
   }
 }

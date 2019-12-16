@@ -1,14 +1,16 @@
 .video-produce {
-  margin: 30px auto;
-  width: 260px;
+  margin: 32px 0 58px;
+}
 
+.video-produce__wrapper {
   border: 1px solid #ececec;
 }
 
 .video-produce__title {
   position: relative;
 
-  padding-left: 91px;
+  margin: 23px 0 24px;
+  padding-left: 89px;
 
   font-size: $baseFontSize + 2;
   color: $black;
@@ -16,7 +18,8 @@
   &::before {
     content: "";
     position: absolute;
-    left: 10px;
+    top: 5px;
+    left: 33px;
 
     width: 32px;
     height: 28px;
@@ -30,10 +33,17 @@
 .video-produce__video-image {
   position: relative;
 
+  img {
+    display: block;
+  }
+
   &::before {
     content: "";
     position: absolute;
+    top: 37px;
+    left: 50%;
 
+    margin-left: -50px;
     width: 101px;
     height: 77px;
 
@@ -44,17 +54,104 @@
 }
 
 .video-produce__description {
-  margin: 34px;
+  margin: 28px 33px 25px;
+
+  font-size: $baseFontSize - 2;
+}
+
+.video-produce__button {
+  display: block;
+  margin: 25px auto 32px;
+  padding: 16px 8px;
+  max-width: 192px;
+
+  line-height: $miniLineHeght;
 }
 
 @media (min-width: $tablet-width) {
   .video-produce {
-    width: 668px;
+    margin: 32px 0 63px;
+  }
+
+  .video-produce__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-produce__title {
+    margin: 36px 0 24px;
+    padding-left: 103px;
+
+    font-size: $baseFontSize + 5;
+
+    &::before {
+      top: -4px;
+      left: 39px;
+    }
+  }
+
+  .video-produce__video-image {
+    order: -1;
+
+    img {
+      width: 100%;
+      height: 455px;
+    }
+
+    &::before {
+      top: 41%;
+      left: 50%;
+    }
+  }
+
+  .video-produce__description {
+    margin: 9px 38px 10px;
+
+    font-size: $baseFontSize;
+    line-height: $largLineHeght;
+  }
+
+  .video-produce__button {
+    margin: 25px 39px 45px;
+    width: auto;
+    max-width: 100%;
   }
 }
 
 @media (min-width: $desctop-width) {
   .video-produce {
-    width: 1050px;
+    margin: 3px 0 105px;
+  }
+
+  .video-produce__wrapper {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 455px;
+  }
+
+  .video-produce__title {
+    margin: 94px 0 24px;
+    padding-left: 78px;
+    max-width: 300px;
+
+    &::before {
+      top: -53px;
+      left: 78px;
+    }
+  }
+
+  .video-produce__video-image {
+    width: 682px;
+  }
+
+  .video-produce__description {
+    margin: 10px 8px 10px 77px;
+    max-width: 282px;
+  }
+
+  .video-produce__button {
+    margin: 36px 39px 45px 79px;
+    width: 100%;
+    max-width: 230px;
   }
 }

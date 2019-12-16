@@ -1,6 +1,10 @@
+.property__description {
+  width: 92px;
+}
+
 .property__description,
 .property__value {
-  padding: 9px 0;
+  padding: 9px 0 10px;
 
   line-height: $baseLineHeght - 4;
 

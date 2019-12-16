@@ -1,7 +1,43 @@
 .ordering {
-  margin: 30px;
+  margin: 22px auto 55px;
+  width: 260px;
 }
 
 .ordering__text {
   font-size: $baseFontSize - 2;
+}
+
+.ordering__form {
+  margin-top: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .ordering {
+    margin: 71px auto 30px;
+    width: 768px;
+  }
+
+  .ordering__text {
+    margin: 71px auto 0;
+    max-width: 667px;
+
+    font-size: $baseFontSize + 2;
+    line-height: $largLineHeght;
+  }
+
+  .ordering__form {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .ordering {
+    width: 1150px;
+    margin: 121px auto 38px;
+  }
+
+  .ordering__text {
+    margin: 121px auto 6px;
+    max-width: 699px;
+  }
 }

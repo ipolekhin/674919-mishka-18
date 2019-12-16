@@ -1,5 +1,43 @@
 .select-size {
+  margin: 0 auto;
+
   font-size: $baseFontSize + 2;
   font-weight: $boldFontWeight;
   line-height: $miniLineHeght;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 31px;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .button {
+    padding: 18px 8px;
+
+    cursor: pointer;
+  }
+}
+
+.select-size__label {
+  display: block;
+  padding: 16px 8px;
+  width: 82px;
+
+  border: solid 2px #444444;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .select-size {
+    max-width: 350px;
+  }
+
+  .select-size__label {
+    width: 112px;
+  }
 }
