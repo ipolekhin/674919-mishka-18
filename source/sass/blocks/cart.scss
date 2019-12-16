@@ -30,6 +30,23 @@
     width: 316px;
 
     a {
+      padding: 30px 0 30px 85px;
+      height: 88px;
+    }
+  }
+
+  .cart__icon {
+    &::before {
+      top: 34px;
+      left: 33px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .cart {
+    a {
+      padding-left: 82px;
       height: 88px;
     }
   }

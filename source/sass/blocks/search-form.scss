@@ -35,4 +35,11 @@
       display: none;
     }
   }
+
+  .search-form__icon {
+    &::before {
+      top: 36px;
+      left: 33px;
+    }
+  }
 }

@@ -51,11 +51,9 @@
             </li>
           </ul>
 
-          <ul class="main-nav__item site-list site-list--post">
-            <li class="site-list__item">
-              <a href="form.html">Бесплатная доставка по России</a>
-            </li>
-          </ul>
+          <p class="main-nav__item main-nav__item--post">
+            Бесплатная доставка по России
+          </p>
         </div>
       </nav>
     </header>
@@ -64,7 +62,7 @@
       <h1 class="page-inner__heading">Каталог товаров</h1>
 
       <section class="catalog">
-        <div class="catalog__wrapper">
+        <div class="container">
           <h2 class="visually-hidden">Товары</h2>
 
           <ul class="catalog__list">
@@ -153,19 +151,23 @@
       </section>
 
       <section class="video-produce">
-        <h2 class="video-produce__title">Процесс производства</h2>
+        <div class="container">
+          <div class="video-produce__wrapper">
+            <h2 class="video-produce__title">Процесс производства</h2>
 
-        <div class="video-produce__video-image">
-          <img src="img/video-mobile@1x.jpg" alt="" width="260" height="150">
+            <div class="video-produce__video-image">
+              <img src="img/video-mobile@1x.jpg" alt="" width="260" height="150">
+            </div>
+
+            <p class="video-produce__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+
+            <a class="button video-produce__button" href="#">
+              Сделать заказ
+            </a>
+          </div>
         </div>
-
-        <p class="video-produce__description">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-        </p>
-
-        <a class="button" href="#">
-          Сделать заказ
-        </a>
       </section>
     </main>
 
@@ -209,7 +211,7 @@
 
     <section class="modal modal-cart">
       <div class="modal-cart__wrapper">
-        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <h2 class="modal-cart__title">Добавить в&nbsp;корзину</h2>
 
         <p class="modal-cart__text">
           Выберите размер:
@@ -218,18 +220,18 @@
         <form class="form select-size" action="https://echo.htmlacademy.ru" method="post">
           <ul>
             <li>
+              <input class="visually-hidden" id="select-size__s" type="text" name="size" checked=""/>
               <label class="select-size__label" for="select-size__s">S</label>
-              <input class="visually-hidden" id="select-size__s" type="text" name="size"/>
             </li>
 
             <li>
-              <label class="select-size__label" for="select-size__m">M</label>
               <input class="visually-hidden" id="select-size__m" type="text" name="size"/>
+              <label class="select-size__label" for="select-size__m">M</label>
             </li>
 
             <li>
-              <label class="select-size__label" for="select-size__l">L</label>
               <input class="visually-hidden" id="select-size__l" type="text" name="size"/>
+              <label class="select-size__label" for="select-size__l">L</label>
             </li>
           </ul>
 

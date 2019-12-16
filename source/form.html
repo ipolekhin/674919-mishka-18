@@ -51,11 +51,9 @@
             </li>
           </ul>
 
-          <ul class="main-nav__item site-list site-list--post">
-            <li class="site-list__item">
-              <a href="form.html">Бесплатная доставка по России</a>
-            </li>
-          </ul>
+          <p class="main-nav__item main-nav__item--post">
+            Бесплатная доставка по России
+          </p>
         </div>
       </nav>
     </header>
@@ -71,10 +69,10 @@
         </p>
 
         <form class="form ordering__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__group">
-            <legend class="form__title">Тип:</legend>
+          <fieldset class="form__group form__group--radio">
+            <div class="form__title">Тип</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--radio">
               <li class="form__item">
                 <input class="visually-hidden" id="type-interior-object" type="radio" name="type" value="interior-object" checked="">
                 <label class="form__radio" for="type-interior-object">
@@ -84,17 +82,17 @@
 
               <li class="form__item">
                 <input class="visually-hidden" id="type-сhildrens-toy" type="radio" name="type" value="сhildrens-toy">
-                <label for="type-сhildrens-toy">
+                <label class="form__radio" for="type-сhildrens-toy">
                   Детская игрушка
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__title">Цвет:</legend>
+          <fieldset class="form__group form__group--checkbox">
+            <div class="form__title">Цвет</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--checkbox">
               <li class="form__item">
                 <input class="visually-hidden" id="color-white" type="checkbox" name="color" value="white" checked="">
                 <label class="form__checkbox" for="color-white">
@@ -139,10 +137,10 @@
             </ul>
           </fieldset>
 
-          <div class="form__group">
+          <div class="form__group form__group--fio">
             <div class="form__title">ФИО</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--fio">
               <li class="form__item">
                 <label class="form__label" for="fname-field">Имя:</label>
                 <input class="form__field" id="fname-field" type="text" name="fname" placeholder="Введите ваше имя*" required>
@@ -160,10 +158,10 @@
             </ul>
           </div>
 
-          <div class="form__group">
+          <div class="form__group form__group--phone">
             <div class="form__title">Тел</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--contact">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="phone-field">Телефон</label>
                 <input class="form__field form__field--phone" id="phone-field" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
@@ -171,10 +169,10 @@
             </ul>
           </div>
 
-          <div class="form__group">
+          <div class="form__group form__group--email">
             <div class="form__title">E-mail</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--contact">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="email-field">E-mail</label>
                 <input class="form__field form__field--email" id="email-field" type="text" name="email" placeholder="Ваш Email*" required>
@@ -182,10 +180,10 @@
             </ul>
           </div>
 
-          <div class="form__group">
+          <div class="form__group form__group--textarea">
             <div class="form__title">Доп</div>
 
-            <ul class="form__list">
+            <ul class="form__list form__list--textarea">
               <li class="form__item">
                 <label class="visually-hidden form__label" for="comment-field">Дополнительная информация</label>
                 <textarea class="form__field form__field--comment" id="comment-field" name="comment" placeholder="Опишите все ваши
@@ -194,9 +192,11 @@
             </ul>
           </div>
 
-          <p class="form__text"><sup>*</sup>Поля обязательны для заполнения</p>
+          <div class="form__block-submit">
+            <p class="form__text">*Поля обязательны для заполнения</p>
 
-          <input class="button form__submit" type="submit" value="Отправить заказ">
+            <input class="button form__submit" type="submit" value="Отправить заказ">
+          </div>
         </form>
       </section>
     </main>

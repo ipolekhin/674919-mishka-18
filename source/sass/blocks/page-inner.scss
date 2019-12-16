@@ -1,6 +1,6 @@
 .page-inner__heading {
   margin: 0;
-  padding: 73px 30px 74px;
+  padding: 70px 30px 77px;
 
   @include h1();
 
@@ -9,12 +9,18 @@
 
 @media (min-width: $tablet-width) {
   .page-inner__heading {
-    padding: 79px 30px;
+    padding: 53px 30px 81px;
+
+    font-size: $h2tabletFontSize;
+    line-height: $h2tabletLineHeight;
   }
 }
 
 @media (min-width: $desctop-width) {
   .page-inner__heading {
-    padding: 93px 30px 92px;
+    padding: 52px 30px 103px;
+
+    font-size: $h2desctopFontSize;
+    line-height: $h2desctopLineHeight;
   }
 }

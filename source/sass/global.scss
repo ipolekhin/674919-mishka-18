@@ -51,3 +51,23 @@ a {
     list-style: none;
   }
 }
+
+.container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+    padding: 0 52px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: $desctop-width;
+    padding: 0 50px;
+  }
+}

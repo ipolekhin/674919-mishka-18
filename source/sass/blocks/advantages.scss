@@ -1,16 +1,9 @@
 .advantages {
-  padding: 34px 0;
-
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: contain;
-  background-repeat: repeat-x;
-  background-position: 0 0;
+  margin: 34px 0;
 }
 
 .advantages__wrapper {
-  margin: 0 auto;
   padding-left: 28px;
-  width: 320px;
 }
 
 .advantages__title {
@@ -77,9 +70,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin: 81px 0 22px;
+
+    .advantages__list {
+      margin-top: 19px;
+      margin-left: 6px;
+    }
+  }
+
   .advantages__wrapper {
-    padding-left: 0;
-    width: 668px;
+    padding-left: 45px;
+  }
+
+  .advantages__title {
+    font-size: $h2tabletFontSize;
+    line-height: $h2tabletLineHeight;
   }
 
   .advantages__list {
@@ -91,21 +97,50 @@
 
   .advantages__item {
     min-height: 127px;
+
+    font-size: $baseFontSize + 5;
+    line-height: $baseLineHeght - 2;
+
+    &--ecological,
+    &--growth-likes {
+      width: 228px;
+    }
+
+    &--scandy-style {
+      margin-right: 40px;
+      width: 260px;
+    }
+
+    &--with-love {
+      width: 254px;
+    }
+
+    &--national {
+      width: 296px;
+    }
+
+    &--gift-wrap {
+      width: 236px;
+    }
   }
 }
 
 @media (min-width: $desctop-width) {
   .advantages {
-    margin: 0 auto;
-    width: 1150px;
+    margin-top: 77px;
   }
 
   .advantages__title {
-    margin: 50px 0 34px;
+    font-size: $h2desctopFontSize;
+    line-height: $h2desctopLineHeight;
   }
 
   .advantages__wrapper {
-    padding: 0 124px 0 176px;
-    width: 1050px;
+    padding-right: 226px;
+    padding-left: 219px;
+  }
+
+  .advantages__item {
+    margin-top: 28px;
   }
 }

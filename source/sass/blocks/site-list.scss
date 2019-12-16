@@ -3,7 +3,6 @@
     display: block;
   }
 
-  &--post,
   &--offers {
     display: none;
     margin: 0;
@@ -29,9 +28,8 @@
 @media (min-width: $tablet-width) {
   .site-list {
     a {
-      margin-top: 22px;
+      margin-top: 18px;
       padding: 0;
-      height: 16px;
 
       box-shadow: none;
     }
@@ -40,18 +38,13 @@
       display: flex;
       flex-grow: 1;
       order: 1;
-      padding-left: 52px;
+      padding-left: 49px;
 
       a {
         margin-right: 37px;
-      }
-    }
 
-    &--post {
-      display: block;
-      margin-left: auto;
-      padding-right: 52px;
-      order: 2;
+        font-size: $baseFontSize;
+      }
     }
   }
 }
@@ -61,14 +54,16 @@
     &--menu {
       flex-grow: 0;
       order: -1;
-      padding-left: 0;
+      padding-left: 17px;
 
       a {
         margin: 0;
-        padding: 26px 0 29px;
-        width: 235px;
+        padding: 30px 34px 29px;
         height: 88px;
+
+        font-size: $baseFontSize + 2;
         text-align: center;
+
         box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
       }
     }
@@ -76,9 +71,14 @@
     &--offers {
       display: flex;
       flex-grow: 1;
+      margin-left: 51px;
+
+      .site-list__item {
+        margin-right: 60px;
+      }
 
       a {
-        width: 235px;
+        font-size: $baseFontSize;
         text-align: center;
       }
     }
