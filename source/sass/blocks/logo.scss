@@ -6,12 +6,46 @@
   &--top {
     padding: 22px;
     height: 79px;
+
     text-align: center;
+
     box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
+
+    a {
+      &[href] {
+        &:hover {
+          opacity: 0.6;
+        }
+
+        &:active,
+        &:focus {
+          opacity: 0.3;
+        }
+      }
+    }
   }
 
   &--bottom {
     display: none;
+  }
+}
+
+.logo__link-bottom {
+  &[href] {
+    &:hover {
+      path {
+        fill: $aqua-marine;
+      }
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+
+      path {
+        fill: $aqua-marine;
+      }
+    }
   }
 }
 
@@ -23,10 +57,13 @@
       height: 88px;
 
       text-align: left;
+
+      border-right: 1px solid #ececec;
+      box-shadow: 0 1px 0 0 #ececec, inset 0 0 0 0 #ffffff;
     }
 
     &--bottom {
-      margin-right: 78px;
+      margin-right: 81px;
       display: block;
     }
   }
