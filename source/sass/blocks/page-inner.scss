@@ -9,18 +9,37 @@
 
 @media (min-width: $tablet-width) {
   .page-inner__heading {
-    padding: 53px 30px 81px;
+    position: relative;
+
+    margin-top: -41px;
+    padding: 94px 30px 92px;
 
     font-size: $h2tabletFontSize;
     line-height: $h2tabletLineHeight;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 24px;
+      background: url("../img/zigzag-fill-desktop-svg.svg") repeat-x 2px 0;
+      background-size: contain;
+    }
   }
 }
 
 @media (min-width: $desctop-width) {
   .page-inner__heading {
-    padding: 52px 30px 103px;
+    padding: 93px 30px 111px;
 
     font-size: $h2desctopFontSize;
     line-height: $h2desctopLineHeight;
+
+    &::after {
+      background-position-x: 17px;
+      background-size: auto;
+    }
   }
 }

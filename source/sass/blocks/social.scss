@@ -1,15 +1,37 @@
 .social {
   display: flex;
-  justify-content: space-evenly;
-  margin: 0;
+  justify-content: space-around;
+  margin: 0 auto;
   padding: 0;
+  max-width: 184px;
 
   align-items: center;
   list-style: none;
+
+  li:last-child {
+    margin-right: 5px;
+  }
+}
+
+.social__link {
+  &:hover {
+    path {
+      fill: $aqua-marine;
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+
+    path {
+      fill: $aqua-marine;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-top: 12px;
+    margin-top: 10px;
   }
 }

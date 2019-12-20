@@ -2,7 +2,7 @@ $bgcolor-seafoam-blue: $seafoam-blue;
 $bgcolor-greeny-blue: #56c3b2;
 
 .category {
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
 }
 
 .category__header {
@@ -27,27 +27,111 @@ $bgcolor-greeny-blue: #56c3b2;
   width: 320px;
 }
 
+.category__item {
+  position: relative;
+}
+
 .category__link {
+  position: relative;
+
   display: block;
-  padding: 28px 180px 27px 29px;
+  padding: 26px 180px 29px 29px;
 
   font-size: $baseFontSize + 4;
   font-weight: $boldFontWeight;
   color: $white;
 
+  &:hover {
+    margin-top: -5px;
+    padding-bottom: 34px;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active,
+  &:focus {
+    margin-top: -5px;
+    padding-bottom: 34px;
+
+    color: rgba(255, 255, 255, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   &--interior-object {
-    background: $bgcolor-seafoam-blue url("../img/icon-interior.svg") no-repeat 85% center;
+    background-color: $bgcolor-seafoam-blue;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 23px;
+      right: 36px;
+
+      width: 40px;
+      height: 62px;
+
+      background: url("../img/interior-svg.svg") no-repeat;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &--сhildrens-toy {
-    background: $bgcolor-greeny-blue url("../img/icon-toy.svg") no-repeat 85% center;
+    background-color: $bgcolor-greeny-blue;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 27px;
+
+      width: 60px;
+      height: 60px;
+
+      background: url("../img/toy-svg.svg") no-repeat;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: $aqua-marine;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
+  .category {
+    position: relative;
+
+    margin-top: -41px;
+
+    background: #f9f9f9 url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/zigzag-fill-desktop-svg.svg") repeat-x center top;
+      background-size: contain;
+    }
+  }
+
   .category__header {
-    padding-top: 112px;
-    min-height: 586px;
+    padding-top: 152px;
+    min-height: 626px;
   }
 
   .category__slogan {
@@ -62,14 +146,31 @@ $bgcolor-greeny-blue: #56c3b2;
   }
 
   .category__link {
-    padding: 26px 160px 32px 36px;
+    padding: 26px 160px 46px 36px;
 
     font-size: $baseFontSize + 5;
     line-height: $largLineHeght;
 
-    &--interior-object,
+    &:hover {
+      padding-bottom: 51px;
+    }
+
+    &:active,
+    &:focus {
+      padding-bottom: 51px;
+    }
+
+    &--interior-object {
+      &::after {
+        top: 30px;
+      }
+    }
+
     &--сhildrens-toy {
-      background-position-x: 87%;
+      &::after {
+        top: 32px;
+        right: 34px;
+      }
     }
   }
 
@@ -83,6 +184,16 @@ $bgcolor-greeny-blue: #56c3b2;
 }
 
 @media (min-width: $desctop-width) {
+  .category {
+    background: #f9f9f9 url("../img/hero-desktop@1x.jpg") no-repeat 50% 0;
+
+    &::after {
+      height: 34px;
+
+      background-size: auto;
+    }
+  }
+
   .category__slogan {
     width: 624px;
 
@@ -95,11 +206,15 @@ $bgcolor-greeny-blue: #56c3b2;
   }
 
   .category__link {
-    padding-right: 336px;
+    padding: 26px 336px 50px 36px;
 
-    &--interior-object,
-    &--сhildrens-toy {
-      background-position-x: 92%;
+    &:hover {
+      padding-bottom: 55px;
+    }
+
+    &:active,
+    &:focus {
+      padding-bottom: 55px;
     }
   }
 

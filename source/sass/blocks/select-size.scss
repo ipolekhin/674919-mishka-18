@@ -15,6 +15,10 @@
     list-style: none;
   }
 
+  input:checked + .select-size__label {
+    border-color: #62d1ba;
+  }
+
   .button {
     padding: 18px 8px;
 
@@ -27,9 +31,13 @@
   padding: 16px 8px;
   width: 82px;
 
-  border: solid 2px #444444;
+  border: solid 2px rgba(68, 68, 68, 0.1);
 
   cursor: pointer;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

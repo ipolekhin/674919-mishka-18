@@ -135,6 +135,7 @@
 @media (min-width: $tablet-width) {
   .form__group {
     display: flex;
+    align-items: baseline;
     margin-bottom: 0;
 
     .form__list {
@@ -143,7 +144,6 @@
   }
 
   .form__title {
-    padding-top: 18px;
     width: 160px;
   }
 
@@ -267,7 +267,6 @@
   }
 
   .form__title {
-    padding-top: 18px;
     width: 105px;
   }
 

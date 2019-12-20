@@ -15,57 +15,101 @@
 }
 
 .advantages__item {
+  position: relative;
+
   margin-top: 29px;
   padding-top: 54px;
 
   @include set-typography($baseFontSize + 2, $boldFontWeight, $baseLineHeght - 4, $black);
 
+  &::before {
+    content: "";
+
+    position: absolute;
+  }
+
   &--ecological {
     width: 180px;
 
-    background-image: url("../img/icon-ecological.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 2px;
+      left: 10px;
+
+      width: 32px;
+      height: 37px;
+
+      background: url("../img/icon-ecological.svg") no-repeat;
+    }
   }
 
   &--scandy-style {
     width: 210px;
 
-    background-image: url("../img/icon-scandy-style.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 3px;
+      left: 2px;
+
+      width: 47px;
+      height: 27px;
+
+      background: url("../img/icon-scandy-style.svg") no-repeat;
+    }
   }
 
   &--growth-likes {
     width: 190px;
 
-    background-image: url("../img/icon-growth-likes.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 8px;
+      left: 10px;
+
+      width: 34px;
+      height: 27px;
+
+      background: url("../img/icon-growth-likes.svg") no-repeat;
+    }
   }
 
   &--with-love {
     width: 220px;
 
-    background-image: url("../img/icon-with-love.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 5px;
+      left: 6px;
+
+      width: 35px;
+      height: 34px;
+
+      background: url("../img/icon-with-love.svg") no-repeat;
+    }
   }
 
   &--national {
     width: 260px;
 
-    background-image: url("../img/icon-national.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 6px;
+      left: -4px;
+
+      width: 55px;
+      height: 23px;
+
+      background: url("../img/icon-national.svg") no-repeat;
+    }
   }
 
   &--gift-wrap {
     width: 210px;
 
-    background-image: url("../img/icon-gift-wrap.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      top: 4px;
+      left: 5px;
+
+      width: 33px;
+      height: 32px;
+
+      background: url("../img/icon-gift-wrap.svg") no-repeat;
+    }
   }
 }
 
@@ -101,26 +145,57 @@
     font-size: $baseFontSize + 5;
     line-height: $baseLineHeght - 2;
 
-    &--ecological,
-    &--growth-likes {
+    &--ecological {
       width: 228px;
+
+      &::before {
+        left: 8px;
+      }
     }
 
     &--scandy-style {
       margin-right: 40px;
       width: 260px;
+
+      &::before {
+        top: 2px;
+        left: 0;
+      }
+    }
+
+    &--growth-likes {
+      width: 228px;
+
+      &::before {
+        top: 6px;
+        left: 8px;
+      }
     }
 
     &--with-love {
       width: 254px;
+
+      &::before {
+        left: 2px;
+      }
     }
 
     &--national {
       width: 296px;
+
+      &::before {
+        top: 5px;
+        left: -8px;
+      }
     }
 
     &--gift-wrap {
       width: 236px;
+
+      &::before {
+        top: 2px;
+        left: 1px;
+      }
     }
   }
 }

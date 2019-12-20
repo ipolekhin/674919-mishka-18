@@ -1,11 +1,32 @@
-.copyright {
-  img {
-    vertical-align: text-bottom;
-  }
+.copyright__text {
+  margin-right: 24px;
+
+  @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
 }
 
-.copyright__text {
-  @include set-typography($baseFontSize + 4, $boldFontWeight, $baseLineHeght - 6, $black);
+.copyright__link {
+  svg {
+    vertical-align: middle;
+  }
+
+  path {
+    fill: $seafoam-blue;
+  }
+
+  &:hover {
+    path {
+      fill: $aqua-marine;
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+
+    path {
+      fill: $aqua-marine;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
