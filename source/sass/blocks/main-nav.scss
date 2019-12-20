@@ -103,6 +103,8 @@
     }
 
     &--opened {
+      height: 100vh;
+
       .main-nav__wrapper {
         position: absolute;
         top: 0;

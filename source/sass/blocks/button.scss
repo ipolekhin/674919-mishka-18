@@ -11,7 +11,7 @@
 
   @include set-color();
 
-  &:hover {
+  &:hover:not(.button--seafoam-blue) {
     color: $white;
 
     background-color: $color-base;
@@ -28,5 +28,16 @@
     line-height: inherit;
 
     @include set-color($white, $seafoam-blue, none);
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+
+    &:active,
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: #59d5bc;
+    }
   }
 }
