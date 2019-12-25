@@ -87,6 +87,17 @@
         background: url("../img/huge-arrow-right.svg") no-repeat center center;
       }
     }
+
+    &:hover {
+      &::before {
+        opacity: 0.6;
+      }
+    }
+
+    &:active,
+    &:focus {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -100,6 +111,8 @@
     margin-bottom: 90px;
 
     .container {
+      background: url("../img/review@1x.jpg") no-repeat 0 0;
+
       &::after {
         bottom: -85px;
 
@@ -114,8 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 76px;
-
-    background: url("../img/review@1x.jpg") no-repeat 0 0;
+    min-height: 456px;
   }
 
   .reviews__write-button {
@@ -162,8 +174,8 @@
 
   .reviews__controls {
     position: absolute;
-    right: 52px;
-    bottom: 49px;
+    right: 0;
+    bottom: 48px;
 
     display: block;
 

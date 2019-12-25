@@ -24,7 +24,6 @@ $bgcolor-greeny-blue: #56c3b2;
 
 .category__wrapper {
   margin: 0 auto;
-  width: 320px;
 }
 
 .category__item {
@@ -104,6 +103,12 @@ $bgcolor-greeny-blue: #56c3b2;
       background-color: $aqua-marine;
     }
   }
+
+  span {
+    display: inline-block;
+
+    width: 160px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -124,7 +129,7 @@ $bgcolor-greeny-blue: #56c3b2;
       width: 100%;
       height: 24px;
 
-      background: url("../img/zigzag-fill-desktop-svg.svg") repeat-x center top;
+      background: url("../img/zigzag-fill-desktop-svg.svg") repeat-x center 2px;
       background-size: contain;
     }
   }
@@ -142,11 +147,11 @@ $bgcolor-greeny-blue: #56c3b2;
   }
 
   .category__wrapper {
-    width: 668px;
+    padding: 0 52px;
   }
 
   .category__link {
-    padding: 26px 160px 46px 36px;
+    padding: 26px 130px 46px 36px;
 
     font-size: $baseFontSize + 5;
     line-height: $largLineHeght;
@@ -179,7 +184,7 @@ $bgcolor-greeny-blue: #56c3b2;
   }
 
   .category__item {
-    width: 334px;
+    width: 100%;
   }
 }
 

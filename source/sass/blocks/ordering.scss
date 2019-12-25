@@ -1,6 +1,5 @@
 .ordering {
-  margin: 22px auto 55px;
-  width: 260px;
+  margin: 22px 30px 55px;
 }
 
 .ordering__text {
@@ -13,13 +12,13 @@
 
 @media (min-width: $tablet-width) {
   .ordering {
-    margin: 71px auto 30px;
-    width: 768px;
+    margin: 60px auto 30px;
+    //width: 768px;
   }
 
   .ordering__text {
-    margin: 71px auto 0;
-    max-width: 667px;
+    margin: 0;
+    padding: 0 50px;
 
     font-size: $baseFontSize + 2;
     line-height: $largLineHeght;
@@ -33,11 +32,11 @@
 @media (min-width: $desctop-width) {
   .ordering {
     width: 1150px;
-    margin: 121px auto 38px;
+    margin: 113px auto 38px;
   }
 
   .ordering__text {
-    margin: 121px auto 6px;
+    margin: 0 auto;
     max-width: 699px;
   }
 }

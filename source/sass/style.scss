@@ -26,13 +26,14 @@
 @import "blocks/contacts.scss";
 //Стили в теле страниц catalog.html
 @import "blocks/catalog.scss";
+@import "blocks/catalog-item.scss";
 @import "blocks/video-produce.scss";
 //Стили в теле страниц form.html
 @import "blocks/ordering.scss";
 @import "blocks/form.scss";
 
 //Модальные окна
-@import "blocks/modal.scss";
+@import "blocks/modal-cart.scss";
 @import "blocks/select-size.scss";
 
 //Стили подвала
