@@ -35,13 +35,18 @@
     &--top {
       flex-grow: 1;
       flex-basis: 46%;
-      padding-left: 51px;
+      padding-left: 49px;
       height: 88px;
 
       text-align: left;
 
       border-right: 1px solid #ececec;
       box-shadow: 0 1px 0 0 #ececec, inset 0 0 0 0 #ffffff;
+
+      img {
+        width: 112px;
+        height: auto;
+      }
     }
 
     &--bottom {
@@ -75,6 +80,12 @@
   .logo {
     &--top {
       flex-basis: auto;
+      padding: 9px;
+      padding-left: 43px;
+
+      img {
+        width: 149px;
+      }
     }
   }
 }

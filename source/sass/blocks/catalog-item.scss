@@ -114,6 +114,10 @@
     width: 50%;
   }
 
+  .catalog-item__title {
+    max-width: 240px;
+  }
+
   .catalog-item__link {
     font-size: $baseFontSize + 5;
   }
@@ -123,13 +127,13 @@
   }
 
   .catalog-item__price {
-    margin-top: auto;
+    margin: auto 4px 0 4px;
 
     font-size: $baseFontSize + 2;
   }
 
   .catalog-item__addtocart {
-    margin-right: 4px;
+    //margin-right: 4px;
   }
 }
 
@@ -141,6 +145,7 @@
 
   .catalog-item__images {
     flex-grow: 0;
+    width: 100%;
 
     img {
       width: 316px;
@@ -149,14 +154,20 @@
   }
 
   .catalog-item__description {
-    padding: 24px 26px 28px;
+    padding: 24px 26px 26px;
+    width: 100%;
   }
 
   .catalog-item__property {
     margin-bottom: 13px;
   }
 
+  .catalog-item__price {
+    margin: auto 0 0 0;
+    padding-top: 24px;
+  }
+
   .catalog-item__addtocart {
-    margin-right: 7px;
+    margin-right: 6px;
   }
 }
