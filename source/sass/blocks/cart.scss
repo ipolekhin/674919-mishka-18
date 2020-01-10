@@ -10,6 +10,21 @@
   }
 }
 
+.cart__icon {
+  &:hover .cart__link-icon {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active .cart__link-icon,
+  &:focus .cart__link-icon {
+    opacity: 0.3;
+
+    fill: #63d1bb;
+  }
+}
+
 .cart__link-icon {
   position: absolute;
   top: 34px;
@@ -20,9 +35,7 @@
 
   opacity: 0.2;
 
-  path {
-    fill: #231f20;
-  }
+  fill: #231f20;
 }
 
 @media (min-width: $tablet-width) {

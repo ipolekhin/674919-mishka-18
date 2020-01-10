@@ -3,8 +3,12 @@
     display: inline-block;
   }
 
+  img {
+    width: 100%;
+  }
+
   &--top {
-    padding: 22px;
+    padding: 2px 4px 2px 0;
     height: 79px;
 
     text-align: center;
@@ -35,7 +39,8 @@
     &--top {
       flex-grow: 1;
       flex-basis: 46%;
-      padding-left: 49px;
+      padding: 7px 4px 2px 29px;  ;
+      //padding-left: 38px;
       height: 88px;
 
       text-align: left;
@@ -44,8 +49,8 @@
       box-shadow: 0 1px 0 0 #ececec, inset 0 0 0 0 #ffffff;
 
       img {
-        width: 112px;
-        height: auto;
+        width: 148.5px;
+        //height: auto;
       }
     }
 
@@ -59,7 +64,7 @@
   .logo__link-bottom {
     &[href] {
       &:hover {
-        path {
+        svg {
           fill: $aqua-marine;
         }
       }
@@ -68,7 +73,7 @@
       &:focus {
         opacity: 0.3;
 
-        path {
+        svg {
           fill: $aqua-marine;
         }
       }
@@ -84,7 +89,7 @@
       padding-left: 43px;
 
       img {
-        width: 149px;
+        width: 150px;
       }
     }
   }

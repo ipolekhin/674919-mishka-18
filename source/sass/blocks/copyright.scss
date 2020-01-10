@@ -7,14 +7,9 @@
 .copyright__link {
   svg {
     vertical-align: middle;
-  }
-
-  path {
     fill: $seafoam-blue;
-  }
 
-  &:hover {
-    path {
+    &:hover {
       fill: $aqua-marine;
     }
   }
@@ -23,7 +18,7 @@
   &:focus {
     opacity: 0.3;
 
-    path {
+    svg {
       fill: $aqua-marine;
     }
   }
