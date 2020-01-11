@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
-    <script>
-      document.createElement( "picture" );
-    </script>
-    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -20,7 +16,11 @@
         <div class="main-nav__wrapper">
           <div class="main-nav__item logo logo--top">
             <a>
-              <img src="img/logo-adaptive.svg" alt="Логотип" width="148">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
+              </picture>
             </a>
           </div>
 
@@ -87,12 +87,20 @@
             <li class="category__item">
               <a class="category__link category__link--interior-object" href="#">
                 <span>Предметы интерьера</span>
+
+                <svg class="" width="40.21" height="62.41">
+                  <use xlink:href="img/sprite.svg#icon-interior"></use>
+                </svg>
               </a>
             </li>
 
             <li class="category__item">
               <a class="category__link category__link--сhildrens-toy" href="#">
                 <span>Детские игрушки</span>
+
+                <svg class="" width="60" height="59.62">
+                  <use xlink:href="img/sprite.svg#icon-toy"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -360,5 +368,8 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

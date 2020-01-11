@@ -3,12 +3,8 @@
     display: inline-block;
   }
 
-  img {
-    width: 100%;
-  }
-
   &--top {
-    padding: 2px 4px 2px 0;
+    padding: 22px;
     height: 79px;
 
     text-align: center;
@@ -39,7 +35,7 @@
     &--top {
       flex-grow: 1;
       flex-basis: 46%;
-      padding: 7px 4px 2px 29px;
+      padding-left: 49px;
       height: 88px;
 
       text-align: left;
@@ -48,8 +44,7 @@
       box-shadow: 0 1px 0 0 #ececec, inset 0 0 0 0 #ffffff;
 
       img {
-        width: 148.5px;
-        //height: auto;
+        width: 112px;
       }
     }
 
@@ -88,7 +83,7 @@
       padding-left: 43px;
 
       img {
-        width: 150px;
+        width: 149px;
       }
     }
   }
