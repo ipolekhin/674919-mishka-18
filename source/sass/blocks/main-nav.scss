@@ -51,31 +51,6 @@
   }
 }
 
-.main-nav__link {
-  &:hover {
-    .search-form__link-icon,
-    .cart__link-icon {
-      opacity: 1;
-    }
-
-    path {
-      fill: #63d1bb;
-    }
-  }
-
-  &:active,
-  &:focus {
-    .search-form__link-icon,
-    .cart__link-icon {
-      opacity: 0.3;
-    }
-
-    path {
-      fill: #63d1bb;
-    }
-  }
-}
-
 @media (max-width: $mobile-width-only) {
   .main-nav {
     &--closed {

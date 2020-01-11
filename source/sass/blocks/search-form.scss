@@ -9,6 +9,21 @@
   }
 }
 
+.search-form__icon {
+  &:hover .search-form__link-icon {
+    opacity: 1;
+
+    fill: #63d1bb;
+  }
+
+  &:active .search-form__link-icon,
+  &:focus .search-form__link-icon {
+    opacity: 0.3;
+
+    fill: #63d1bb;
+  }
+}
+
 .search-form__link-icon {
   position: absolute;
   top: 36px;
@@ -19,9 +34,7 @@
 
   opacity: 0.2;
 
-  path {
-    fill: #231f20;
-  }
+  fill: #231f20;
 }
 
 @media (min-width: $tablet-width) {

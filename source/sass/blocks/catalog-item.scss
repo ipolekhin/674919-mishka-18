@@ -76,7 +76,7 @@
   &:hover {
     opacity: 1;
 
-    path {
+    svg {
       fill: $seafoam-blue;
     }
   }
@@ -85,7 +85,7 @@
   &:focus {
     opacity: 0.3;
 
-    path {
+    svg {
       fill: $seafoam-blue;
     }
   }
