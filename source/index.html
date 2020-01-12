@@ -244,8 +244,16 @@
             </div>
 
             <div class="reviews__controls">
-              <button class="reviews__arrow reviews__arrow--left" type="button" aria-label="Предыдущий отзыв"></button>
-              <button class="reviews__arrow reviews__arrow--right" type="button" aria-label="Следующий отзыв"></button>
+              <button class="reviews__arrow reviews__arrow--left" type="button" aria-label="Предыдущий отзыв">
+                <svg width="50" height="26">
+                  <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="reviews__arrow reviews__arrow--right" type="button" aria-label="Следующий отзыв">
+                <svg width="50" height="26">
+                  <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                </svg>
+              </button>
             </div>
 
             <a class="button reviews__write-button" href="#">
@@ -258,7 +266,12 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <header class="contacts__header">
-            <h2 class="contacts__title">Контакты</h2>
+            <h2 class="contacts__title">
+              Контакты
+              <svg width="46.68" height="81.69">
+                <use xlink:href="img/sprite.svg#icon-flag"></use>
+              </svg>
+            </h2>
 
             <ul class="contacts__list">
               <li class="contacts__item">

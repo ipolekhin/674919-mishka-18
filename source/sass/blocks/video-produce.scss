@@ -24,18 +24,10 @@
   font-size: $baseFontSize + 2;
   color: $black;
 
-  &::before {
-    content: "";
+  svg {
     position: absolute;
     top: 5px;
     left: 33px;
-
-    width: 32px;
-    height: 28px;
-
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
   }
 }
 

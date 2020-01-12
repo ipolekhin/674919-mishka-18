@@ -52,50 +52,34 @@
 
 .reviews__controls {
   display: flex;
+}
 
-  .reviews__arrow {
-    position: relative;
+.reviews__arrow {
+  position: relative;
 
-    flex-grow: 1;
-    margin-bottom: 38px;
-    height: 52px;
+  flex-grow: 1;
+  margin-bottom: 38px;
+  padding: 0;
+  height: 52px;
 
-    background-color: $white;
-    border: 1px solid $white-four;
+  background-color: $white;
+  border: 1px solid $white-four;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    &::before {
-      content: "";
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      position: absolute;
+  &--right {
+    border-left: none;
+  }
+
+  &:hover {
+    svg {
+      opacity: 0.6;
     }
+  }
 
-    &--left {
-      &::before {
-        background: url("../img/huge-arrow-left.svg") no-repeat center center;
-      }
-    }
-
-    &--right {
-      border-left: none;
-
-      &::before {
-        background: url("../img/huge-arrow-right.svg") no-repeat center center;
-      }
-    }
-
-    &:hover {
-      &::before {
-        opacity: 0.6;
-      }
-    }
-
-    &:active,
-    &:focus {
+  &:active,
+  &:focus {
+    svg {
       opacity: 0.3;
     }
   }

@@ -139,42 +139,28 @@
 .form__group--phone {
   .form__item {
     position: relative;
+  }
 
-    &::after {
-      content: "";
+  svg {
+    position: absolute;
+    right: 8px;
+    top: 11px;
 
-      position: absolute;
-      right: 8px;
-      top: 11px;
-
-      width: 25px;
-      height: 24px;
-
-      background-image: url("../img/phone-svg.svg");
-
-      opacity: 0.2;
-    }
+    opacity: 0.2;
   }
 }
 
 .form__group--email {
   .form__item {
     position: relative;
+  }
 
-    &::after {
-      content: "";
+  svg {
+    position: absolute;
+    right: 4px;
+    top: 11px;
 
-      position: absolute;
-      right: 4px;
-      top: 11px;
-
-      width: 32px;
-      height: 27px;
-
-      background-image: url("../img/mail-svg.svg");
-
-      opacity: 0.2;
-    }
+    opacity: 0.2;
   }
 }
 
@@ -323,10 +309,8 @@
       background-color: $white-two;
     }
 
-    .form__item {
-      &::after {
-        right: 26px;
-      }
+    svg {
+      right: 26px;
     }
   }
 
@@ -339,10 +323,8 @@
       background-color: $white-two;
     }
 
-    .form__item {
-      &::after {
-        right: 22px;
-      }
+    svg {
+      right: 22px;
     }
   }
 
@@ -514,7 +496,7 @@
       width: 113px;
     }
 
-    .form__item::after {
+    svg {
       right: 8px;
     }
   }
@@ -526,7 +508,7 @@
       width: 113px;
     }
 
-    .form__item::after {
+    svg {
       right: 4px;
     }
   }
