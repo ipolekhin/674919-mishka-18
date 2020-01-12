@@ -27,8 +27,8 @@
 
 .cart__link-icon {
   position: absolute;
-  top: 34px;
-  left: 32px;
+  top: 31px;
+  left: 30px;
 
   width: 20px;
   height: 19px;
@@ -52,11 +52,9 @@
     }
   }
 
-  .cart__icon {
-    &::before {
-      top: 34px;
-      left: 33px;
-    }
+  .cart__link-icon {
+    top: 34px;
+    left: 33px;
   }
 }
 

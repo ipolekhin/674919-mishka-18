@@ -26,8 +26,8 @@
 
 .search-form__link-icon {
   position: absolute;
-  top: 36px;
-  left: 32px;
+  top: 31px;
+  left: 31px;
 
   width: 20px;
   height: 19px;
@@ -51,10 +51,8 @@
     }
   }
 
-  .search-form__icon {
-    &::before {
-      top: 36px;
-      left: 33px;
-    }
+  .search-form__link-icon {
+    top: 36px;
+    left: 33px;
   }
 }

@@ -23,6 +23,10 @@
   font-size: $baseFontSize + 3;
   line-height: $largLineHeght;
   color: $black;
+
+  svg {
+    display: none;
+  }
 }
 
 .contacts__item {
@@ -88,16 +92,12 @@
     font-size: $h2tabletFontSize;
     line-height: $h2tabletLineHeight;
 
-    &::after {
-      content: "";
+    svg {
       position: absolute;
       top: -14px;
       right: 53px;
 
-      width: 47px;
-      height: 81px;
-
-      background: url("../img/icon-flag.svg") no-repeat 0 0;
+      display: block;
     }
   }
 
@@ -163,7 +163,7 @@
     font-size: $h2desctopFontSize;
     line-height: $h2desctopLineHeight;
 
-    &::after {
+    svg {
       top: 2px;
       right: auto;
       left: 103px;
