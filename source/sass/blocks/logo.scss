@@ -58,7 +58,7 @@
   .logo__link-bottom {
     &[href] {
       &:hover {
-        svg {
+        path {
           fill: $aqua-marine;
         }
       }
@@ -67,7 +67,7 @@
       &:focus {
         opacity: 0.3;
 
-        svg {
+        path {
           fill: $aqua-marine;
         }
       }
