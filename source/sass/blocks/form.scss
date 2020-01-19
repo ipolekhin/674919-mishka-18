@@ -119,7 +119,7 @@
 }
 
 .form__radio {
-  height: 40px;
+  min-height: 40px;
 
   &::before {
     top: -8px;
@@ -231,6 +231,12 @@
     &:hover,
     &:focus {
       box-shadow: inset 0 -2px 0 0 $seafoam-blue;
+
+      & + svg {
+        fill: $seafoam-blue;
+
+        opacity: 1;
+      }
     }
   }
 
@@ -248,6 +254,10 @@
       border-color: $seafoam-blue;
     }
   }
+}
+
+.form__input-outline:focus + label:before {
+  outline: 2px solid #a6c7ff;
 }
 
 .form__text {
@@ -351,7 +361,7 @@
   }
 
   .form__radio {
-    height: 58px;
+    min-height: 58px;
 
     &::before {
       left: 0;
@@ -364,7 +374,7 @@
 
   .form__checkbox {
     width: 261px;
-    height: 52px;
+    min-height: 52px;
 
     &::before {
       left: 0;

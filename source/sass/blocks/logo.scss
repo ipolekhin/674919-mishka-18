@@ -51,24 +51,21 @@
     &--bottom {
       margin-right: 81px;
       display: block;
-    }
-  }
 
-
-  .logo__link-bottom {
-    &[href] {
-      &:hover {
-        path {
-          fill: $aqua-marine;
+      &[href] {
+        &:hover {
+          path {
+            fill: $aqua-marine;
+          }
         }
-      }
 
-      &:active,
-      &:focus {
-        opacity: 0.3;
+        &:active,
+        &:focus {
+          opacity: 0.3;
 
-        path {
-          fill: $aqua-marine;
+          path {
+            fill: $aqua-marine;
+          }
         }
       }
     }

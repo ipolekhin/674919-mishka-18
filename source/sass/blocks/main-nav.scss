@@ -2,7 +2,6 @@
   position: relative;
 
   margin: 0 auto;
-  width: 320px;
   min-height: 79px;
 
   font-size: $baseFontSize + 2;
@@ -29,7 +28,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 0;
+  top: 2px;
   right: 0;
   z-index: 12;
 
@@ -59,7 +58,7 @@
           content: "";
 
           position: absolute;
-          top: 28px;
+          top: 30px;
           left: 33px;
 
           width: 20px;
@@ -70,14 +69,13 @@
         }
       }
 
-      .site-list__item,
-      .search-form,
-      .cart {
+      .main-nav__item:not(.main-nav__item--logo) {
         display: none;
       }
     }
 
     &--opened {
+      width: 100%;
       height: 100vh;
 
       .main-nav__wrapper {
@@ -129,9 +127,7 @@
       min-height: 0;
     }
 
-    .site-list__item,
-    .search-form,
-    .cart {
+    .main-nav__item:not(.main-nav__item--offers):not(.main-nav__item--post) {
       display: block;
     }
   }

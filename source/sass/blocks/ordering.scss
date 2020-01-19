@@ -13,7 +13,6 @@
 @media (min-width: $tablet-width) {
   .ordering {
     margin: 60px auto 30px;
-    //width: 768px;
   }
 
   .ordering__text {
@@ -37,6 +36,7 @@
 
   .ordering__text {
     margin: 0 auto;
+    padding: 0;
     max-width: 699px;
   }
 }

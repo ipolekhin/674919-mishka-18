@@ -13,6 +13,9 @@
 @import "blocks/search-form.scss";
 @import "blocks/cart.scss";
 
+//container
+@import "blocks/container.scss";
+
 //Стили главной страницы и внутренних страниц
 @import "blocks/page-main.scss";
 @import "blocks/page-inner.scss";
@@ -33,6 +36,7 @@
 @import "blocks/form.scss";
 
 //Модальные окна
+@import "blocks/modal.scss";
 @import "blocks/modal-cart.scss";
 @import "blocks/select-size.scss";
 

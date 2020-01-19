@@ -34,6 +34,7 @@
     &--menu {
       display: flex;
       flex-grow: 1;
+      flex-wrap: wrap;
       order: 1;
       padding-left: 49px;
 
@@ -68,6 +69,7 @@
     &--offers {
       display: flex;
       flex-grow: 1;
+      flex-wrap: wrap;
       margin-left: 51px;
 
       .site-list__item {

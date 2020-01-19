@@ -10,3 +10,27 @@ navToggle.addEventListener('click', function () {
     navMain.classList.add('main-nav--closed');
   }
 });
+
+var addtocart = document.querySelectorAll(".addtocart");
+if (addtocart) {
+  var modalcart = document.querySelector(".modal-cart");
+  for (var i = 0; i < addtocart.length; i++) {
+    addtocart[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      modalcart.classList.add("show");
+    });
+  }
+}
+
+window.addEventListener("keydown", function (e) {
+  if (e.keyCode === 27) {
+    e.preventDefault();
+    if (addtocart !== null) {
+      if (modalcart.classList.contains("show")) {
+        modalcart.classList.remove("show");
+      }
+    }
+  }
+});
+
+svg4everybody();

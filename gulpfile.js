@@ -67,6 +67,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -76,8 +77,9 @@ gulp.task("css", function () {
 
 gulp.task("compressjs", function () {
   return pipeline(
-    gulp.src("source/js/*.js"),
+    gulp.src("build/js/script.js"),
     uglify(),
+    rename({suffix: ".min"}),
     gulp.dest("build/js")
   );
 });
@@ -106,6 +108,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
+    "source/js/**",
   ], {
     base: "source"
   })

@@ -74,13 +74,15 @@ $bgcolor-greeny-blue: #56c3b2;
 
     svg {
       position: absolute;
-      top: 30px;
+      top: 23px;
       right: 36px;
 
       opacity: 0.5;
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus  {
       background-color: #59d5bc;
     }
   }
@@ -90,13 +92,15 @@ $bgcolor-greeny-blue: #56c3b2;
 
     svg {
       position: absolute;
-      top: 32px;
-      right: 32px;
+      top: 20px;
+      right: 27px;
 
       opacity: 0.5;
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $aqua-marine;
     }
   }
@@ -147,6 +151,7 @@ $bgcolor-greeny-blue: #56c3b2;
 
     font-size: $h2tabletFontSize;
     line-height: $h2tabletLineHeight;
+    color: $black;
   }
 
   .category__wrapper {
@@ -155,6 +160,7 @@ $bgcolor-greeny-blue: #56c3b2;
 
   .category__link {
     padding: 26px 130px 46px 35px;
+    height: 100%;
 
     font-size: $baseFontSize + 5;
     line-height: $largLineHeght;
@@ -169,15 +175,15 @@ $bgcolor-greeny-blue: #56c3b2;
     }
 
     &--interior-object {
-      &::after {
+      svg {
         top: 30px;
       }
     }
 
     &--сhildrens-toy {
-      &::after {
+      svg {
         top: 32px;
-        right: 34px;
+        right: 33px;
       }
     }
   }
@@ -187,7 +193,7 @@ $bgcolor-greeny-blue: #56c3b2;
   }
 
   .category__item {
-    width: 100%;
+    width: 50%;
   }
 }
 
