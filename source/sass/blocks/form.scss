@@ -256,7 +256,7 @@
   }
 }
 
-.form__input-outline:focus + label:before {
+.form__input-outline:focus + label::before {
   outline: 2px solid #a6c7ff;
 }
 

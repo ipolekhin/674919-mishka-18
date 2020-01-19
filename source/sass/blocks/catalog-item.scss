@@ -137,6 +137,7 @@
   .catalog-item {
     flex-direction: column;
     width: 316px;
+
     &:not(:nth-child(3n)) {
       margin-right: 51px;
     }
