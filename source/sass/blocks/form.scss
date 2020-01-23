@@ -358,6 +358,11 @@
     input[type="text"] {
       padding: 0 16px;
     }
+
+    input[type="tel"],
+    input[type="email"] {
+      padding: 0 58px 0 16px;
+    }
   }
 
   .form__radio {
@@ -434,11 +439,6 @@
     .form__label {
       padding: 15px 25px 0 0;
     }
-  }
-
-  input[type="tel"],
-  input[type="email"] {
-    padding: 0 58px 0 16px;
   }
 
   .form__block-submit {

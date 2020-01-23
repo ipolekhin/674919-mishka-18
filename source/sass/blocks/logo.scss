@@ -1,7 +1,5 @@
 .logo {
-  a {
-    display: inline-block;
-  }
+  display: inline-block;
 
   &--top {
     padding: 22px;
@@ -11,16 +9,14 @@
 
     box-shadow: 0 1px 0 0 #ececec, inset 0 1px 0 0 #ececec;
 
-    a {
-      &[href] {
-        &:hover {
-          opacity: 0.6;
-        }
+    &[href] {
+      &:hover {
+        opacity: 0.6;
+      }
 
-        &:active,
-        &:focus {
-          opacity: 0.3;
-        }
+      &:active,
+      &:focus {
+        opacity: 0.3;
       }
     }
   }

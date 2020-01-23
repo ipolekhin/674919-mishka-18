@@ -20,15 +20,13 @@
         </button>
 
         <div class="main-nav__wrapper">
-          <div class="main-nav__item main-nav__item--logo logo logo--top">
-            <a>
-              <picture>
-                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
-              </picture>
-            </a>
-          </div>
+          <a class="main-nav__item main-nav__item--logo logo logo--top">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Мишка»" width="86" height="35">
+            </picture>
+          </a>
 
           <ul class="main-nav__item site-list site-list--menu">
             <li class="site-list__item">
@@ -281,14 +279,12 @@
 
             <ul class="contacts__list">
               <li class="contacts__item">
-                <span class="contact__label">e-mail:</span>
-                <span class="contacts__info">
-                  <a class="contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-                </span>
+                <span class="contacts__label">e-mail:</span>
+                <a class="contacts__info contacts__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
               </li>
 
               <li class="contacts__item">
-                <span class="contact__label">адрес:</span>
+                <span class="contacts__label">адрес:</span>
                 <span class="contacts__info contacts__info--adress">
                 г. Санкт-Петербург,
                 ул.&nbsp;Большая Конюшенная,

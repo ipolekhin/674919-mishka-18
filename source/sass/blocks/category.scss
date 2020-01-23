@@ -7,7 +7,7 @@ $bgcolor-greeny-blue: #56c3b2;
   background-repeat: no-repeat;
   background-position: 50% -18px;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: 144dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
     background-size: 575px auto;
   }
@@ -121,7 +121,7 @@ $bgcolor-greeny-blue: #56c3b2;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
 
-    @media (min-resolution: $retina-dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
       background-size: 1150px auto;
     }
